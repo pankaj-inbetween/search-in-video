@@ -58,6 +58,13 @@ def split_by_timewindow(subs, window_in_minutes):
 
 #### Indexing and Search
 
-Chunks are loaded into AstraDB using `langchain` SDK
+Chunks are loaded into AstraDB using `langchain` SDK.
+
 Notebook converts the search results to a dataframe for easier viewing
 
+```
+result = vstore.similarity_search_with_relevance_scores("bio technology application in agriculture", k=1)
+```
+| ---- | ---- | ---- | ---- | 
+| subtitle |	link | start_time | score | 
+| whatever organic compounds are there we will isolate them now biotechnology application in agriculture there are various uh you know applications are there see with increasing population like we have read in the chapter number two of zoology which is reproductive Health there was a major issue and that major issue was related to the population increasing you know population in millions it was difficult to feed those number of individuals so what we did we tried to increase the agriculture right by that only we can provide them food so we started using some chemicals we started using some chemicals like insecticide and pesticides and we when we started using those insecticide and pesticide what happened production increased and because of that insecticide and pesticide they had some residual effects also though this lead to the Green Revolution also which later we realized	| https://www.youtube.com/watch?v=haDg_l9jjxA&t=21180s	| 21180	 | 0.943823 | 
